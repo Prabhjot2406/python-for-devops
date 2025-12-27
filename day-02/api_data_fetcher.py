@@ -22,13 +22,13 @@ for item in a[:5]:   # Print only first 5 items to avoid too much output
 
 # Writing first 5 posts to a JSON file
 
-with open("output.json", "w") as f:
+with open("./output.json", "w") as f:
     json.dump(a[:5], f, indent=4)  # Dump first 5 posts into the file with indentation of 4 spaces
     print("First 5 posts have been written to output.json")
 
 
 # what is f?
-# f is a file object that is used to write data to the file posts.json
+# f is a file object that is used to write data to the file output.json
 # json.dump() method is used to write JSON data to a file
 # indent parameter is used to format the JSON data with indentation for better readability
 
